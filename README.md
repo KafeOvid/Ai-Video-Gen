@@ -41,6 +41,7 @@ To get started with the frontend, follow these steps:
 To start the development server:
 ```bash
 npm run dev
+```
 
 # Backend
 
@@ -49,7 +50,9 @@ npm run dev
     bun install
     ```
 To run:
-    ``` bash bun run index.js ```
+    ````bash 
+    bun run index.js
+    ````
 
 
 This project was created using `bun init` in bun v1.1.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
