@@ -15,11 +15,11 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/KafeOvid/1724.git
+    git clone https://github.com/KafeOvid/Ai-Video-Gen.git
     ```
 2. Navigate into the project directory:
     ```bash
-    cd 1724
+    cd Ai-Video-Gen
     ```
 3. Install the required dependencies:
     ```bash
