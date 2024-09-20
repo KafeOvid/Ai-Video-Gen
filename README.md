@@ -38,8 +38,8 @@ To get started with this project, follow these steps:
     ```
 To run:
     ``` bash
-
     bun run index.js
+    
     ```
 
 
