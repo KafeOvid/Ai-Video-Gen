@@ -8,44 +8,42 @@ import Feature from './Components/Feature';
 import VideoGenerator from './Components/VideoGenerator';
 import AboutUs from './Components/About';
 import Footer from './Components/Footer';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <Header />
       <Routes>
-        {/* Home Route with Hero, Dashboard, Features, About, and Footer */}
         <Route 
           path="/" 
           element={
             <>
-              <Header />
-              <Dashboard />
+              <div id="dashboard">
+                <Dashboard />
+              </div>
               <div id="feature">
-                  <Feature />
+                <Feature />
               </div>
               <div id="about">
                 <AboutUs />
-              </div>            
-              <div id="footer">
-                <Footer />
               </div>
+              <Footer />
             </>
           } 
         />
-
-        {/* Video Generator Route */}
         <Route 
           path="/video-generator" 
           element={
             <>
-              <Header />
               <VideoGenerator />
               <Footer />
             </>
           } 
         />
-
-        {/* Catch-all Route for 404 */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route 
           path="*" 
           element={

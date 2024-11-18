@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Ensure you are using 'Link' from react-router-dom
 import '../styles/Header.css';
 import logo from '../assets/logo-removebg-preview.png'; // Import for logo
 
@@ -69,8 +69,13 @@ const Header: React.FC = () => {
         {/* Call-to-Action Buttons */}
         <div className="hcta-buttons">
           <div className="desktop-buttons">
-            <button className="hcta-button hlogin-button">Login</button>
-            <button className="hcta-button hsignup-button">Sign Up</button>
+            {/* Link to Login and SignUp Pages */}
+            <Link to="/login">
+              <button className="hcta-button hlogin-button">Login</button>
+            </Link>
+            <Link to="/signup">
+              <button className="hcta-button hsignup-button">Sign Up</button>
+            </Link>
           </div>
         </div>
       </div>
