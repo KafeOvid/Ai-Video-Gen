@@ -12,7 +12,7 @@ const Feature: React.FC = () => {
         <div className="feature-images">
           <div className="image-item">
             <img
-              src="src\assets\image.png"
+              src="../assets/image.png"
               alt="Stock Photos"
               className="feature-image"
             />
