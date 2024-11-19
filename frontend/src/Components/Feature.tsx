@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Feature.css';
+import Image from '../assets/image.png';
 
 const Feature: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Feature: React.FC = () => {
         <div className="feature-images">
           <div className="image-item">
             <img
-              src="../assets/image.png"
+              src={Image}
               alt="Stock Photos"
               className="feature-image"
             />
