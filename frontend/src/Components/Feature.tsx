@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Feature.css';
-import Image from '../assets/image.png';
+import Image from '../assets/image4.png';
 
 const Feature: React.FC = () => {
   return (
