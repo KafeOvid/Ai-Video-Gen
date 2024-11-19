@@ -29,7 +29,9 @@ const App: React.FC = () => {
               <div id="about">
                 <AboutUs />
               </div>
-              <Footer />
+              <div id="footer">
+                <Footer />
+              </div>
             </>
           } 
         />
@@ -42,8 +44,20 @@ const App: React.FC = () => {
             </>
           } 
         />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={
+          <>
+            <Login />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/signup" element={
+          <>
+            <Signup />
+            <Footer />
+          </>
+        }
+        />
         <Route 
           path="*" 
           element={
